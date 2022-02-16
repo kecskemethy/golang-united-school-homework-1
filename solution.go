@@ -5,8 +5,12 @@ import (
 	"github.com/kyokomi/emoji/v2"
 )
 
+func GetMessage() string {
+	hwMessage := emoji.Sprint("Hello :world_map:!")
+	return hwMessage
+}
+
 func main() {
 
-	hwMessage := emoji.Sprint("Hello :world_map:!")
-	fmt.Println(hwMessage)
+	fmt.Println(GetMessage())
 }
